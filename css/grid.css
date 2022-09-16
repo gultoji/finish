@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.item{
+    min-height: 150px;
+    font-size: 50px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+.lg{
+    background: aqua;
+    grid-area: lg;
+}
+.sm{
+  background: blue;
+  grid-area: sm;
+}
+.sm2{
+    background: blueviolet;
+    grid-area: sm2;
+}
+.lg2{
+    background: brown;
+    grid-area: lg2;
+}
+.f{
+    background: burlywood;
+    grid-area: f;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "lg lg sm lg2 lg2"
+    "lg lg sm2 lg2 lg2"
+    "f f f f f "
+    ;
+    gap: 30px;
+}

@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.item{
+    min-height: 150px;
+}
+header{
+    background: #000;
+    grid-area: h;
+}
+aside{
+    background: blue;
+    grid-area: a;
+}
+main{
+    background: chartreuse;
+    grid-area: m;
+}
+footer{
+    background: blanchedalmond;
+    grid-area: f;
+}
+/* grid */
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+         "h h h h h"
+         "a m m m m"
+         "a m m m m"
+         "a m m m m"
+         "f f f f f"
+    ;
+    gap: 30px;
+}
